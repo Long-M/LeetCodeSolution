@@ -1,4 +1,4 @@
-package com.ml.leetcode.easy;
+package com.ml.leetcode.medium;
 
 import java.util.ArrayList;
 import java.util.Arrays;
