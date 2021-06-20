@@ -6,6 +6,8 @@ import java.util.List;
 /**
  * @author Mr.ml
  * @date 2021/6/20
+ *
+ * 给定一个不含重复数字的数组nums，返回其所有可能的全排列。你可以按任意顺序返回答案。
  */
 public class Solution_046_Permutations {
 
