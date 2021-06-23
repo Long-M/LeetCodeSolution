@@ -3,6 +3,13 @@ package com.ml.leetcode.easy;
 /**
  * @author Mr.ml
  * @date 2021/6/23
+ *
+ * 给定两个字符串形式的非负整数num1和num2，计算它们的和。
+ * 提示：
+ * num1和num2的长度都小于5100
+ * num1和num2都只包含数字0-9
+ * num1和num2都不包含任何前导零
+ * 你不能使用任何內建BigInteger库，也不能直接将输入的字符串转换为整数形式
  */
 public class Solution_415_AddStrings {
 
