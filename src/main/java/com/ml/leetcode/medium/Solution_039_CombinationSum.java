@@ -20,11 +20,11 @@ public class Solution_039_CombinationSum {
         List<Integer> path = new ArrayList<>();
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(candidates);
-        backtrace(candidates, 0, target, path, res);
+        backtrack(candidates, 0, target, path, res);
         return res;
     }
 
-    public void backtrace(int[] candidates, int begin, int target, List<Integer> path, List<List<Integer>> res) {
+    public void backtrack(int[] candidates, int begin, int target, List<Integer> path, List<List<Integer>> res) {
         if (target < 0) {
             return;
         }
@@ -39,7 +39,7 @@ public class Solution_039_CombinationSum {
             }
             path.add(candidates[i]);
             // 因为一个数字可以重复选取，所以从i开始
-            backtrace(candidates, i, target - candidates[i], path, res);
+            backtrack(candidates, i, target - candidates[i], path, res);
             // 回溯
             path.remove(path.size() - 1);
         }
