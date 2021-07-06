@@ -17,7 +17,7 @@ package com.ml.leetcode.medium;
  * 本题中的空白字符只包括空格字符' '。
  * 除前导空格或数字后的其余字符串外，请勿忽略任何其他字符。
  */
-public class Solution_007_StringToIntegerAtoi {
+public class Solution_008_StringToIntegerAtoi {
 
     public int myAtoi(String s) {
         char[] chars = s.toCharArray();
