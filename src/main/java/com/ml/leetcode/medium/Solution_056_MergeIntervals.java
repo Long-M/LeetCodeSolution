@@ -6,7 +6,8 @@ import java.util.Arrays;
  * @author Mr.ml
  * @date 2021/7/7
  *
- *
+ * 以数组intervals表示若干个区间的集合，其中单个区间为intervals[i]=[starti,endi]。
+ * 请你合并所有重叠的区间，并返回一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间。
  */
 public class Solution_056_MergeIntervals {
 
