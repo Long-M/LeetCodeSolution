@@ -9,7 +9,7 @@ package com.ml.leetcode.medium;
  *
  * 找规律，两次交换，第一次以对角线为中心交换，第二次左右交换
  */
-public class Solution_48_RotateImage {
+public class Solution_048_RotateImage {
 
     public void rotate(int[][] matrix) {
         int m = matrix.length, n = matrix[0].length;
