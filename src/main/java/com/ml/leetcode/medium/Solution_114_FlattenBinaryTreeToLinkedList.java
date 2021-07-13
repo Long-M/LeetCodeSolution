@@ -13,9 +13,11 @@ public class Solution_114_FlattenBinaryTreeToLinkedList {
     public void flatten(TreeNode root) {
         TreeNode cur = root;
         while (cur != null) {
+            // 如果左子树不为空
             if (cur.left != null) {
                 TreeNode next = cur.left;
                 TreeNode pre = next;
+                // 寻找左子树的最后一个节点
                 while (pre.right != null) {
                     pre = pre.right;
                 }
