@@ -1,4 +1,4 @@
-package com.ml.leetcode.medium;
+package com.ml.leetcode.easy;
 
 /**
  * @author Mr.ml
