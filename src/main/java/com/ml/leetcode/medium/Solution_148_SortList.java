@@ -60,4 +60,39 @@ public class Solution_148_SortList {
         return dummy.next;
     }
 
+    public ListNode quickSortList(ListNode head) {
+        quickSort(head, null);
+        return head;
+    }
+
+    public static void quickSort(ListNode head, ListNode end) {
+        if (head != end) {
+            ListNode node = partition(head, end);
+            quickSort(head, node);
+            quickSort(node.next, end);
+        }
+    }
+
+    public static ListNode partition(ListNode head, ListNode end) {
+        ListNode p1 = head, p2 = head.next;
+
+        while (p2 != end) {
+            if (p2.val < head.val) {
+                p1 = p1.next;
+
+                int temp = p1.val;
+                p1.val = p2.val;
+                p2.val = temp;
+            }
+            p2 = p2.next;
+        }
+
+        if (p1 != head) {
+            int temp = p1.val;
+            p1.val = head.val;
+            head.val = temp;
+        }
+        return p1;
+    }
+
 }
