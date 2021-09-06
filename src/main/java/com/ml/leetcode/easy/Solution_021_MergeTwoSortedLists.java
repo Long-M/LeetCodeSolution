@@ -4,9 +4,9 @@ package com.ml.leetcode.easy;
  * @author Mr.ml
  * @date 2021/6/10
  *
- * 将两个升序链表合并为一个新的 升序 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
+ * 将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
  */
-public class Solution_001_MergeTwoSortedLists {
+public class Solution_021_MergeTwoSortedLists {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null) {
