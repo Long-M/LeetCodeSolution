@@ -39,7 +39,7 @@ public class Solution_460_LFUCache {
             return -1;
         }
         Node node = keyTable.get(key);
-        int value = node.val, frequency = node.frequency;
+        int value = node.value, frequency = node.frequency;
         frequencyTable.get(frequency).remove(node);
         // 如果当前链表为空，我们需要在哈希表中删除，且更新minFrequency
         if (frequencyTable.get(frequency).size() == 0) {
@@ -96,11 +96,11 @@ public class Solution_460_LFUCache {
 }
 
 class Node {
-    int key, val, frequency;
+    int key, value, frequency;
 
-    Node(int key, int val, int frequency) {
+    Node(int key, int value, int frequency) {
         this.key = key;
-        this.val = val;
+        this.value = value;
         this.frequency = frequency;
     }
 }
